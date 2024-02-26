@@ -689,12 +689,23 @@ h2 {
 **************************/
 
 .contact-section {
-  background-color: #f7ab24;
-  background-image: url("../images/contact-bg.jpg");
-  background-position:60% 0;
-  background-size:contain;
-  background-repeat:no-repeat;  
   position: relative;
+  background-image: url("../images/contact-bg2.jpg");
+  background-position:60% 0;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f7ab24;
+  opacity: 0.7;
 }
 
 .ear-piece {
