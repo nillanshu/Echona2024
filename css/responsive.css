@@ -127,8 +127,16 @@
 /* xs */
 @media (max-width: 767px) {
 
+  .navbar-header{
+    height: 6rem;
+  }
   .main-nav .container {
     display: block;
+  }
+   
+  .logo-responsive{
+    left: 5px;
+    top: 10px;
   }
   
   .fixed-menu .container {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -9,6 +10,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/ico/favicon.ico">
@@ -24,30 +29,30 @@
 			<div class="container">
 				<div class="header-top" >
 					<div class="pull-right social-icons">
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-youtube"></i></a>
+						<a href="twitter.com/AnandcollegeEng"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/anandcollege.eng"><i class="fa fa-facebook"></i></a>
+						<a href="instagram.com/anandcollege.eng"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.youtube.com/@anand-ice"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>
 		        <div class="row">
-		            <div class="navbar-header" style="background-color: #d47624 ;">
+		            <div class="navbar-header" style="background-color: #d47624; ">
 		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 		                    <span class="sr-only">Toggle navigation</span>
 		                    <span class="icon-bar"></span>
 		                    <span class="icon-bar"></span>
 		                    <span class="icon-bar"></span>
 		                </button>
-		                <a class="navbar-brand"  style="height: 10px; background-color: #d47624;
-							 top : 10px; right:15px;" href="index.html">
-		                	<img class="img-responsive" src="images/echona_logo.png" alt="logo">
+		                <a class="navbar-brand logo-responsive"  style="height: 5px; background-color: #d47624;
+							  right:48px; " href="index.html">
+		                	<img class="img-responsive" src="images/echona_logo3.png" alt="logo">
 		                </a>
 		            </div>
 		            <div class="collapse navbar-collapse">
-		                <ul class="nav navbar-nav navbar-right" style="background: linear-gradient(to right, #d47624, #dca34d);">
+		                <ul class="nav navbar-nav navbar-right" style="background-color: #d47624 ">
 		                    <li class="scroll active"><a href="#home">Home</a></li>
 							<li class="scroll"><a href="#about">About</a></li>
-		                    <li class="scroll"><a href="#explore">Celebs</a></li>
+		                    <li class="scroll"><a href="#event">Celebs</a></li>
 		                    <li class="scroll"><a href="#event">Event</a></li>
 		                    <li class="no-scroll"><a href="#twitter">Instagram</a></li>
 		                    <!-- <li><a class="no-scroll" href="#" target="_blank">REGISTER	</a></li> -->
@@ -60,16 +65,20 @@
     </header>
     <!--/#header-->
 
-    <section id="home">
-		<div id="main-slider" class="carousel slide" data-ride="carousel">
+    <section id="home" >
+		<div id="logo-overlay" style=" opacity: 0.9; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; display: flex; justify-content: center; align-items: center;">
+			<img src="images/echona.png" alt="Logo" style="max-width: 50%; height: auto;">
+		</div>
+		<div id="main-slider"  class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
 				<li data-target="#main-slider" data-slide-to="1"></li>
 				<li data-target="#main-slider" data-slide-to="2"></li>
+				<li data-target="#main-slider" data-slide-to="3"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<video class="img-responsive" style="opacity: 0.2;
+					<video class="img-responsive"  style="opacity: 0.3;
 						right: 0;
 						bottom: 0;
 						min-width: 100%;
@@ -89,7 +98,7 @@
 					</div>
 				</div>
 				<div class="item">
-					<video class="img-responsive" style="opacity: 0.2;
+					<video class="img-responsive" style="opacity: 0.3;
 					right: 0;
 					bottom: 0;
 					min-width: 100%;
@@ -108,7 +117,7 @@
 				</div>
 				<div class="item">
 					<video class="img-responsive"
-							style="opacity: 0.2;
+							style="opacity: 0.3;
 									right: 0;
 									bottom: 0;
 									min-width: 100%;
@@ -119,6 +128,26 @@
 									background-size: cover;"
 							autoplay muted loop>
 						<source src="images/videos/vid4.mp4" type="video/mp4">
+					</video>
+					<div class="carousel-caption">
+						<h2>register for our events </h2>
+						<h4></h4>
+						<a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="item">
+					<video class="img-responsive"
+							style="opacity: 0.3;
+									right: 0;
+									bottom: 0;
+									min-width: 100%;
+									min-height: 100%;
+									width: auto;
+									height: auto;
+									z-index: -100;
+									background-size: cover;"
+							autoplay muted loop>
+						<source src="images/videos/swattrex.mp4" type="video/mp4">
 					</video>
 					<div class="carousel-caption">
 						<h2>register for our events </h2>
@@ -162,12 +191,12 @@
 				</div>
 			</div>
 			<div class="cart">
-				<a href="#contact"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
+				<a href="#contact"><i class="fa fa-ticket"></i> <span>Purchase Tickets</span></a>
 			</div>
 		</div>
 	</section><!--/#explore-->
 
-	<section id="about" style="background-color: black; height: 45rem;">
+	<section id="about" style="background-color: black; height: 60rem;">
 		<video style="opacity: 0.4; " playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 			<source src="images/videos/swattrex.mp4" type="video/mp4">
 		</video>
@@ -175,7 +204,12 @@
 			<div class="row">
 				<div class="about-content">
 					<h2>About Echona</h2>
-					<p>Echona is a vibrant gathering of music, art, and culture. It's an event that celebrates the power of live performances and brings together a diverse range of artists from around the world. From electrifying concerts to intimate acoustic sessions, Echona offers a unique blend of experiences that cater to all music lovers. Join us and immerse yourself in the rhythm of Echona, where every event is a new journey into the world of music.</p>
+					<p>A spectacular event celebrating talent, creativity and unity all-encompassing technical knowledge as well as cultural essences.
+						The on-campus biggest festival of the year embracing a vibrant desert carnival theme, transforming the campus into a mirage of colors and excitement. <br><br>
+						
+						Pleasant evenings full of sandy hues, exotic decorations and a fusion of traditional desert elements with technically modernized carnival flair. It’s the journey into a festive oasis under the starlit night. <br><br>
+						
+						A fest that also serves as a platform for collaboration, bringing together students from various disciplines to share and celebrate their passions. It's a time for excitement, learning, and fostering a sense of community within the college.</p>
 					</p>
 					<a href="#" class="event-button event-details" style="width: 20rem;">View Date & Place <i class="fa fa-angle-right"></i></a>
 				</div>
@@ -511,7 +545,7 @@
 										</div>
 										<div class="col-sm-3">
 											<div class="single-event">
-												<img class="img-responsive" src="images/event/Sparling-mind.png" alt="event-image">
+												<img class="img-responsive" src="images/event/sparkling mind.png" alt="event-image">
 												<h4>SPARKLING MINDS</h4>
 												<!-- <h5>Poetry</h5> -->
 												<div style="display: flex; max-width: 26rem;">
@@ -1185,21 +1219,22 @@
 		<iframe  style="margin: 0; padding: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.295194193783!2d75.95968006826172!3d26.853504991098696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db8be74c25e59%3A0x675325c0c46956fc!2sAnand%20International%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1708677186943!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<!--/#map-->
 		<div class="contact-section">
-			<!-- <div class="ear-piece">
-				<img class="img-responsive" src="images/ear-piece.png" alt="">
-			</div> -->
+			<div class="ear-piece">
+				<!-- <img class="img-responsive" src="images/ear-piece.png" alt=""> -->
+			</div>
 			<div class="container" >
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-4">
 						<div class="contact-text">
 							<h3>Contact</h3>
 							<address>
-								E-mail: promo@party.com<br>
-								Phone: +1 (123) 456 7890<br>
-								Fax: +1 (123) 456 7891
+								Email- student.council@anandice.ac.in <br>
+								Contact- Devang(General Secretary) +91-95719-85746 <br>
+								Sachin(Joint Secretary) +91-6377-961-976 <br>
+								Vanshika(Joint Secretary) +91-96535-66173 
 							</address>
 						</div>
-						<div class="contact-address">
+						<!-- <div class="contact-address">
 							<h3>Contact</h3>
 							<address>
 								Unit C2, St.Vincent's Trading Est.,<br>
@@ -1207,7 +1242,7 @@
 								Bristol, BS2 0UY<br>
 								United Kingdom
 							</address>
-						</div>
+						</div> -->
 					</div>
 					<div class="col-sm-5">
 						<div id="contact-section">
@@ -1238,7 +1273,7 @@
     <footer id="footer">
         <div class="container">
             <div class="text-center">
-                <p> Copyright  &copy;2024<a target="_blank" href="#"> Echona </a> All Rights Reserved. <br> Designed with ❤️ by <a target="_blank" href="https://www.linkedin.com/in/kunal-chhatwani-a18b1422b">Kunal</a>, <a target="_blank" href="https://www.linkedin.com/in/nillanshu-saini-208b52226">Nillanshu</a>, <a target="_blank" href="https://in.linkedin.com/in/abhimanyu-meel-188677227">Abhimanyu</a>, <a target="_blank" href="https://www.linkedin.com/in/archi-bachani0625/">Archi</a>, <a target="_blank" href="https://www.linkedin.com/in/yogesh-sharma-37824b236/">Yogesh</a></p>
+				      <p> Copyright  &copy;2024<a target="_blank" href="#"> Echona </a> All Rights Reserved. <br> Designed with ❤️ by <a target="_blank" href="https://www.linkedin.com/in/kunal-chhatwani-a18b1422b">Kunal</a>, <a target="_blank" href="https://www.linkedin.com/in/nillanshu-saini-208b52226">Nillanshu</a>, <a target="_blank" href="https://in.linkedin.com/in/abhimanyu-meel-188677227">Abhimanyu</a>, <a target="_blank" href="https://www.linkedin.com/in/archi-bachani0625/">Archi</a>, <a target="_blank" href="https://www.linkedin.com/in/yogesh-sharma-37824b236/">Yogesh</a></p>            
             </div>
         </div>
     </footer>
