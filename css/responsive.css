@@ -130,6 +130,10 @@
   .main-nav .container {
     display: block;
   }
+   
+  .logo-responsive{
+    left: 50px;
+  }
   
   .fixed-menu .container {
     display: block;

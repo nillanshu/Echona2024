@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
 
 /*************************
@@ -7,7 +8,9 @@
 **************************/
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 
+  'Dosis', 'sans-serif' ;
+  
   font-size: 17px;
   color: #fff
 }
@@ -115,7 +118,7 @@ h2 {
 }
 
 .navbar-right {
-  background-color: #b56d05;
+  background-color: #d47624;
   padding:0 95px 0 0;
   opacity: .9
 }
@@ -138,7 +141,7 @@ h2 {
 
 
 .fixed-menu {
-  background-color: #b56d05;
+  background-color: #d47624;
   position: fixed;
   top: 0;
 }
@@ -241,8 +244,8 @@ h2 {
 
 #main-slider 
 .carousel-indicators li {
-  background-color:#b56d05;
-  border: 1px solid #b56d05;
+  background-color:#d47624;
+  border: 1px solid #d47624;
 }
 
 #main-slider 
@@ -284,14 +287,36 @@ h2 {
 }
 
 #explore {
-  background: linear-gradient(to right, #d47624, #dca34d);  /* background-image: url("../images/event-bg.jpg"); */
-  background-position: center;
-  background-size: contain;
-  background-repeat:no-repeat;
   position: relative;
   overflow: hidden;
   padding: 100px 0 110px;
-  /* opacity: 0.3; */
+}
+
+#explore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #d47624, #dca34d);
+  opacity: 0.8;
+  z-index: -50;
+}
+
+#explore::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/contact-bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -100;
 }
 
 .watch {
@@ -689,14 +714,24 @@ h2 {
 **************************/
 
 .contact-section {
-  background-color: #f7ab24;
-  background-image: url("../images/contact-bg.jpg");
-  background-position:60% 0;
-  background-size:contain;
-  background-repeat:no-repeat;  
   position: relative;
+  background-image: url("../images/contact-bg2.jpg");
+  background-position:60% 0;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f7ab24;
+  opacity: 0.7;
+}
 .ear-piece {
   position: absolute;
   left: 0;
