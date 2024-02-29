@@ -1,6 +1,8 @@
 /* lg */ 
 @media (min-width: 1200px) {
-  
+  .logo-responsive{
+    height: 5px; width: 400px;
+  }
 }
 
 /* md */
@@ -29,7 +31,10 @@
     padding: 20px;
   }
 
-  
+  .logo-responsive{
+    height: 5px; width: 400px;
+  }
+
   #countdown li {
     margin-right: 30px;
   }
@@ -88,6 +93,10 @@
     padding: 20px 15px;
     font-size: 17px;
   }
+
+  .logo-responsive{
+    height: 5px; width: 400px;
+  }
  
  #countdown li {
   margin-right: 15px;
@@ -135,8 +144,8 @@
   }
    
   .logo-responsive{
-    left: 5px;
-    top: 10px;
+    height: 5px; width: 400px; 
+    
   }
   
   .fixed-menu .container {
@@ -294,9 +303,9 @@
 /* XS Portrait */
 @media (max-width: 479px) {
 
-  .new-logo {
-    display: none;
-  }
+  /* .new-logo {
+    ;
+  } */
 
   .main-nav .container {
     display: none;
@@ -324,7 +333,16 @@
     width: inherit;
   }
 
+  .date{
+    padding-left: 62px;
+    padding-bottom: 40px;
 
+  }
+
+  .logo-responsive{
+    position: absolute;
+    /* width: 40px; */
+  }
   #main-slider .carousel-caption {
     bottom: 17%;
     padding: 10px;
